@@ -238,7 +238,7 @@ p {
   width: 100%;
   height: 20vh;
   background: #333;
-  padding-top: 5em;
+  padding-top: 2.7em;
   p {
     margin: 0;
     color: rgba(212, 198, 126, 1);
@@ -246,6 +246,11 @@ p {
     font-weight: 200;
     letter-spacing: 1px;
     line-height: 1.7em;
+    &:last-child {
+      font-weight: lighter;
+      color: #eee;
+      font-size: 0.9em;
+    }
   }
 
   a {
@@ -280,9 +285,11 @@ p {
     color: #333;
     text-transform: uppercase;
     font-weight: bold;
+
     
   }
 }
+  
 
 #age-verefier {
   display: block;
