@@ -1,0 +1,259 @@
+// bower:scss
+// endbower
+
+@import 'compass/css3';
+
+
+body {
+    background: #fafafa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.warning {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 400;
+}
+
+h1, h2, h3 {
+  font-family: "balthazar";
+  text-transform: uppercase;
+  font-weight: 200;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.7em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+p {
+  font-size: 1.3em;
+  line-height: 27px;
+}
+
+.image-shown {
+  z-index: 110;
+ }
+
+.image-hidden {
+  display: none;
+}
+
+.one {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) , #F4D135);
+}
+.two {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) , #EA8E08);
+}
+.three {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) , #DF1828);
+}
+.four {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5) , #C6D505);
+}
+
+
+
+.hero {
+  background: #333;
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  padding-top: 9em;
+  h1 {
+    // position: absolute;
+    text-align: center;
+    margin: 0;
+    color: #eee;
+  }
+  .logo {
+    width: 20%;
+    position: absolute;
+    left: 40%;
+    top: 25%;
+
+  }
+  
+  .hero-img {
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    right: 0;
+  }
+  .smoke{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.enjoy-tri {
+  width: 100%;
+  height: 75vh;
+  background: url("../images/enjoy-bg.png") fixed no-repeat;
+  background-size: 100%;
+  position: relative;
+  .enjoy-content {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: 6.2em;
+    margin: 0;
+    h1 {
+      margin-bottom: -1px;
+    }
+    p {
+      text-align: center;
+      width: 900px;
+      margin: 2em auto 0 auto;
+    }
+  }
+  .border {
+    width: 100%;
+    top: 10px;
+    height: 0.2em;
+    background: #333;
+    position: absolute;
+  }
+
+  .border-bottom {
+    width: 100%;
+    bottom: 10px;
+    height: 0.2em;
+    background: #333;
+    position: absolute;
+  }
+
+  img {
+    width: 20%;
+    position: absolute;
+    top: 2.5em;
+    left: 40%;
+  }
+}
+
+.flavor-nav, .nav {
+  width: 100%;
+  position: relative;
+  background: #333;
+  color: #eee;
+  font-weight: lighter;
+  height: 5.3em;
+  top: 0;
+  ul {
+    margin: 0 0 0 50%;
+    text-align: center;
+  }
+
+  li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 0.666em;
+    letter-spacing: 1px;
+    line-height: 5.1em;
+
+    &:hover{
+      border-bottom: 3px solid #eee;
+      
+    }
+
+  }
+}
+
+.slider {
+  height: 76vh;
+  width: 100%;
+  position: relative;
+}
+
+.slider-container {
+  width: 1000px;
+  height: 76vh;
+  margin: 0 auto;
+  position: relative;
+  img {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: -3em;
+  }
+  .flavor-content {
+    display: inline-block;
+    position: absolute;
+    width: 45%;
+    padding: 0 2em;
+    top: 23%;
+    right: 0%;
+  }
+}
+
+
+
+.slider-btns {
+  position: relative;
+  top: 15em;
+  img {
+    width: 40%;
+  }
+
+
+  .previous {
+    position: absolute;
+    left: 9%;
+    z-index: 200;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  .next {
+    position: absolute;
+    right: 5%;
+    z-index: 200;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.contact {
+  width: 100%;
+  height: 95vh;
+  background: #fafa;
+}
+
+.nav {
+  background: #eee;
+  color: #333;
+  position: fixed;
+  z-index: 300;
+  border-bottom: 1px solid #333;
+  img {
+    position: absolute;
+    top: 0.666em;
+    left: 2em;
+    width: 70px;  
+  }
+  li:hover{
+    border-bottom: 3px solid #333;
+      
+  }
+  .links {
+    text-decoration: none;
+    color: #333;
+  }
+}
