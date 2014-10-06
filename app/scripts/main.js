@@ -94,7 +94,9 @@ $(document).ready(function() {
     });
 
 
-
+    $('#btn-confirm').click(function(){
+        $("#age-verefier").addClass("active");
+    });
 
         
 });

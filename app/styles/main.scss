@@ -15,6 +15,7 @@ body {
   position: fixed;
   bottom: 0;
   right: 0;
+  width: 20%;
   z-index: 400;
 }
 
@@ -281,4 +282,69 @@ p {
     font-weight: bold;
     
   }
+}
+
+#age-verefier {
+  display: block;
+  background: #333;
+  hidden: true;
+  left: 0;
+  right: 0;
+  height: 100%;
+  z-index: 800;
+  position: fixed;
+  text-align: center;
+  padding-top: 100px;
+  color: #fafafa;
+  margin-bottom: 1em;
+
+  &.active {
+    display: none;
+  }
+
+  .logo-age {
+    width: 35%;
+  }
+  
+  h1 {
+    letter-spacing: 0.04em;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-bottom: 0.3em;
+  }
+
+  button {
+    cursor: pointer;
+    background: #CCC973;
+    margin-left: 1em;
+    font-size: 0.8em;
+    padding: 1em;
+    border-bottom: 4px solid #807F6E;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+      &:hover {
+        padding: 1.07em;
+      }    
+   }
+
+   .btn {
+      background: #DADADA;
+   }
+
+  p {
+    font-weight: 300;
+    text-align: center;
+    padding: 0 400px;
+    line-height: 1.3em;
+    margin-top: 0.9em;
+  }
+
+  .statement {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #b11f24;
+    text-shadow: 3px 0px 1px #2C2C2C;
+  }
+
 }
